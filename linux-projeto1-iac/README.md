@@ -3,9 +3,9 @@
 _Script de Criação de Estrutura de Usuários, Diretórios e Permissões_
 >Curso de Linux pela DIO - Prof. [@denilsonbonatti](https://github.com/denilsonbonatti)
 
-Realizei alterações no projeto proposto, pois estou fazendo um tempo depois da criação do curso e tive problemas para usar -crypt, ao que parece pela versão o Openssl.
-Pesquisando, cheguei a solução com a instalação do pacote whois.
-Isso tudo porque a proposta do projeto inclui criar usuários com configurações prévias, como a criação de uma senha com a flag -p para adduser que só aceita a senha se a mesma for encriptada.
+Realizei alterações no projeto proposto, pois estou fazendo um tempo depois da criação do curso e tive problemas para usar ```-crypt```, ao que parece pela versão o **Openssl**.
+Pesquisando, cheguei a solução com a instalação do pacote **whois**.
+Isso tudo porque a proposta do projeto inclui criar usuários com configurações prévias, como a criação de uma senha com a flag ```-p``` para ```adduser``` que só aceita a senha se a mesma for _encriptada_.
 Na versão anterior teríamos a linha:
 
 ```encrypted_password=$(openssl passwd -crypt "$password")```
